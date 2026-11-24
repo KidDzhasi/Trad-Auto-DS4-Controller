@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Trad Auto-DS4 Controller
+GenericName=DualShock 4 Bluetooth Manager
+Comment=Bluetooth pairing and reconnection utility for DualShock 4 / Doubleshock 4 controllers
+Exec=/home/k-trad/.local/bin/trad-auto-ds4-controller
+Icon=trad-auto-ds4-controller
+Terminal=false
+Categories=Utility;Game;
+StartupWMClass=trad-auto-ds4-controller
+Keywords=DualShock;DS4;PS4;Controller;Bluetooth;Gamepad;TRAD;

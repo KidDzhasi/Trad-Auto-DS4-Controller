@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/trad-auto-ds4-controller.svg</file>
+    </qresource>
+</RCC>

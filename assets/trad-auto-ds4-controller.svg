@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded App Icon Background -->
+  <rect x="12" y="12" width="232" height="232" rx="52" fill="url(#bgGrad)" stroke="url(#accentGrad)" stroke-width="4"/>
+
+  <!-- DS4 Light Bar Glow at Top of Controller -->
+  <path d="M 92 78 L 164 78 L 156 86 L 100 86 Z" fill="url(#accentGrad)" filter="url(#glow)"/>
+
+  <!-- Controller Body Silhouette -->
+  <path d="M 82 82
+           C 62 82, 46 98, 42 122
+           L 34 170
+           C 31 188, 44 202, 60 200
+           C 72 198, 80 184, 88 168
+           L 96 154
+           L 160 154
+           L 168 168
+           C 176 184, 184 198, 196 200
+           C 212 202, 225 188, 222 170
+           L 214 122
+           C 210 98, 194 82, 174 82
+           Z"
+        fill="url(#bodyGrad)" stroke="#64748b" stroke-width="3"/>
+
+  <!-- Touchpad -->
+  <rect x="96" y="88" width="64" height="34" rx="5" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  <!-- Bluetooth Rune inside Touchpad -->
+  <path d="M 124 95 L 134 103 L 128 108 L 128 93 L 134 98 L 124 106"
+        fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- D-Pad (Left) -->
+  <g fill="#0f172a" stroke="#94a3b8" stroke-width="1.5">
+    <rect x="64" y="102" width="12" height="32" rx="3"/>
+    <rect x="54" y="112" width="32" height="12" rx="3"/>
+  </g>
+
+  <!-- Action Buttons (Right: Triangle, Circle, Cross, Square) -->
+  <circle cx="186" cy="103" r="5.5" fill="#0f172a" stroke="#4ade80" stroke-width="2"/>
+  <circle cx="199" cy="116" r="5.5" fill="#0f172a" stroke="#f87171" stroke-width="2"/>
+  <circle cx="186" cy="129" r="5.5" fill="#0f172a" stroke="#60a5fa" stroke-width="2"/>
+  <circle cx="173" cy="116" r="5.5" fill="#0f172a" stroke="#f472b6" stroke-width="2"/>
+
+  <!-- Analog Sticks -->
+  <circle cx="102" cy="142" r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="2.5"/>
+  <circle cx="102" cy="142" r="7" fill="#1e293b"/>
+  <circle cx="154" cy="142" r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="2.5"/>
+  <circle cx="154" cy="142" r="7" fill="#1e293b"/>
+
+  <!-- PS / Home Button -->
+  <circle cx="128" cy="142" r="5" fill="#38bdf8"/>
+
+  <!-- TRAD Branding Badge -->
+  <rect x="68" y="34" width="120" height="28" rx="8" fill="#0f172a" stroke="url(#accentGrad)" stroke-width="2"/>
+  <text x="128" y="54" font-family="sans-serif" font-size="17" font-weight="900" letter-spacing="4" fill="#f8fafc" text-anchor="middle">TRAD</text>
+
+  <!-- Bottom Subtitle -->
+  <text x="128" y="224" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#38bdf8" text-anchor="middle">AUTO-DS4</text>
+</svg>

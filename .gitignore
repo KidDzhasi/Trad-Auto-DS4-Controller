@@ -1,0 +1,7 @@
+build/
+CMakeLists.txt.user
+*.o
+*.autosave
+.DS_Store
+.cache/
+compile_commands.json
